@@ -1,0 +1,21 @@
+const deposito = 1000;
+const rendimentoAnual = 0.16;
+const objetivo = 1000000
+
+let conta = 0;
+let meses = 0;
+
+// todo ano ela rende 1,92%
+// todo mes fazer um deposito
+
+// quantos meses demora pra chegar em 100.000
+
+
+while (conta < objetivo) {
+  conta += deposito;
+  conta += conta * rendimentoAnual / 12;
+  meses += 1;
+}
+
+console.log("demorou", meses, "meses");
+console.log("demorou", meses/12, "anos");

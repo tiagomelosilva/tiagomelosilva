@@ -1,0 +1,29 @@
+//EXEMPLOS DE CONDICIONAIS
+let preçoDoPoduto1 = 15.29;
+let preçoDoProduto2 = 2.80;
+let preçoDoProduto3 = 4.85;
+
+let custo = 0
+
+if (preçoDoPoduto1 <=18) {
+  console.log("Comprei o produto 1");
+  custo = custo + preçoDoPoduto1;
+} else {
+  console.log("Não comprei o produto 1");
+}
+
+if (preçoDoProduto2 < 3) {
+  if (preçoDoProduto2 >=1.5) {
+    console.log("Comprei o produto 2");
+    custo += preçoDoProduto2;
+  
+} else {
+  console.log("Tem algo errado com o produto 2");
+  
+}
+}
+
+console.log("Comprei o produto 3");
+custo += preçoDoProduto3
+
+console.log("Eu paguei", custo, "reais.")

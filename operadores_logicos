@@ -1,0 +1,19 @@
+//condicionais - if - else
+
+//Menores de 18 -> menor de idade (meia)
+//Entre 18 e 60 -> adultos (meia apenas com carteirinha)
+// Maiores de 60 anos -> idosos (meia)
+
+// INTEIRA - O RESTO
+// MEIA - MENOR DE IDADE OU IDOSOS OU ADULTOS COM CARTEIRINHA
+
+const idade = 17;
+const temCarteirinha = false; //também posso usar true
+
+const ehAdulta = idade >= 18 && idade <= 60;
+
+if (idade < 18 || idade > 60 || (ehAdulta && temCarteirinha)) {
+  console.log("MEIA");
+} else {
+  console.log("INTEIRA");
+}
